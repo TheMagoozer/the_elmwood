@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Elmwood Bar</title>
+    <meta name="description" content="The Elmwood Bar - Neighbourhood Bar & Local Pub in Etobicoke" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="/config.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              elmwood: {
+                blue: '#0094cd',
+                red: '#ee552b',
+                cream: '#fff6ec',
+                black: '#000000',
+              }
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              script: ['"Kaushan Script"', 'cursive'],
+            },
+            boxShadow: {
+              'retro': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'retro-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
+              'retro-lg': '8px 8px 0px 0px rgba(0,0,0,1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fff6ec;
+        color: #000000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
