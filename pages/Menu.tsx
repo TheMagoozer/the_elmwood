@@ -8,7 +8,6 @@ const Menu: React.FC = () => {
       <Hero 
         imageSrc={MENU_HERO_IMG}
         title={MENU_CONTENT.heroTitle}
-        subtitle={MENU_CONTENT.heroSubtitle}
         titleColor="text-elmwood-blue"
         overlayColor="red"
         titleFontWeight="font-extrabold"
@@ -25,20 +24,13 @@ const Menu: React.FC = () => {
           </div>
 
           {/* CMS Placeholder */}
-          <div className="w-full aspect-[4/5] md:aspect-[3/4] bg-neutral-100 border-2 border-dashed border-neutral-300 flex items-center justify-center overflow-hidden relative group">
+          <div className="w-full aspect-[2/3] bg-neutral-100 border-2 border-dashed border-neutral-300 flex items-center justify-center overflow-hidden relative group">
              {/* Simulating a menu image provided by CMS */}
              <img 
                src={MENU_IMG} 
                alt="Current Menu" 
                className="w-full h-full object-cover"
              />
-             <div className="absolute bottom-4 right-4 bg-elmwood-cream px-4 py-2 border-2 border-elmwood-black font-bold text-xs uppercase transform -rotate-2">
-               {MENU_CONTENT.rotateMessage}
-             </div>
-          </div>
-
-          <div className="mt-12 text-center">
-             <p className="text-xl font-script text-elmwood-red">{MENU_CONTENT.updatedMessage}</p>
           </div>
         </div>
       </section>

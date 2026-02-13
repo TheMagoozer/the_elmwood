@@ -39,6 +39,7 @@ export interface ElmwoodConfig {
   navLinks?: NavLinkItem[];
   homePage?: {
     heroSubtitle: string;
+    heroSubtitleImage?: string;
     introTitleMain: string;
     introTitleHighlight: string;
     introText: string;
@@ -80,6 +81,7 @@ export interface ElmwoodConfig {
     };
     cantDecideTitle: string;
     cantDecideText: string;
+    cocktailsTitle: string;
   };
   contactPage?: {
     heroTitle: string;

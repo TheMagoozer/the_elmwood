@@ -10,7 +10,6 @@ const Drinks: React.FC = () => {
       <Hero 
         imageSrc={DRINKS_HERO_IMG} 
         title={DRINKS_CONTENT.heroTitle}
-        subtitle={DRINKS_CONTENT.heroSubtitle}
         overlayColor="blue"
         titleFontWeight="font-extrabold"
       />
@@ -64,7 +63,7 @@ const Drinks: React.FC = () => {
             <div className="w-24 h-2 bg-elmwood-red mx-auto"></div>
           </div>
 
-          <div className="w-full aspect-[4/5] md:aspect-[3/4] bg-neutral-100 border-2 border-dashed border-neutral-300 flex items-center justify-center overflow-hidden relative group">
+          <div className="w-full aspect-[2/3] bg-neutral-100 border-2 border-dashed border-neutral-300 flex items-center justify-center overflow-hidden relative group">
              <img 
                src={DRINKS_MENU_IMG} 
                alt="Drinks Menu" 

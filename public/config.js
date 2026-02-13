@@ -4,14 +4,14 @@ window.ELMWOOD_CONFIG = {
     description: "The Elmwood Bar - Neighbourhood Bar & Local Pub in Etobicoke"
   },
   images: {
-    logo: "https://theelmwoodbar.com/temp/logo.png",
+    logo: "https://theelmwoodbar.com/temp/logo2.png",
     wingsIcon: "https://theelmwoodbar.com/temp/wings.png",
     glassesIcon: "https://theelmwoodbar.com/temp/glasses.png",
-    drinksMenu: "https://theelmwoodbar.com/temp/fakemenu.jpg",
+    drinksMenu: "https://theelmwoodbar.com/temp/drinks.png",
     contactHero: "https://theelmwoodbar.com/temp/contact.jpg",
     homeHero: "https://theelmwoodbar.com/temp/wingsbg2.jpg",
     menuHero: "https://theelmwoodbar.com/temp/menubg.jpg",
-    menuDisplay: "https://theelmwoodbar.com/temp/menu.png",
+    menuDisplay: "https://theelmwoodbar.com/temp/food.png",
     drinksHero: "https://theelmwoodbar.com/temp/tapsbg.jpg",
     owners: "https://theelmwoodbar.com/temp/Owners.jpg"
   },
@@ -32,6 +32,7 @@ window.ELMWOOD_CONFIG = {
   ],
   homePage: {
     heroSubtitle: "Cold Beer • Hot Wings • Good Vibes",
+    heroSubtitleImage: "https://theelmwoodbar.com/temp/now_open.png",
     introTitleMain: "A Neighbourhood Joint",
     introTitleHighlight: "Since Recently.",
     introText: "Family-owned and built by wing lovers. After countless trips to Buffalo, we perfected authentic Buffalo wings—crispy, saucy, and made with passion. Can't wait to have you."
@@ -95,7 +96,7 @@ window.ELMWOOD_CONFIG = {
   drinksData: [
     { brewery: 'The Elmwood', beer: 'Allentown', style: 'House Lager', abv: '5%' },
     { brewery: 'Bellwoods Brewery', beer: 'Roman Candle', style: 'IPA', abv: '6.8%' },
-    { brewery: 'Great Lakes Brewery', beer: 'Helles German Lager', style: 'Helles', abv: '5%' },
+    { brewery: 'True History Brewing', beer: 'Helles German Lager', style: 'Helles', abv: '5%' },
     { brewery: 'Common Good Beer Co.', beer: 'Ellesmere', style: 'English Amber Ale', abv: '5.2%' },
     { brewery: 'Great Lakes Brewery', beer: 'Canuck Pale Ale', style: 'Pale Ale', abv: '5.2%' },
   ]

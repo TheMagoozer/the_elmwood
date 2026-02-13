@@ -10,6 +10,7 @@ const Home: React.FC = () => {
         imageSrc={HOME_HERO_IMG}
         logoSrc={LOGO_IMG}
         subtitle={HOME_CONTENT.heroSubtitle}
+        subtitleImage={HOME_CONTENT.heroSubtitleImage}
         overlayColor="black"
       />
       

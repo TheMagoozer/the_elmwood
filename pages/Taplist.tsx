@@ -10,7 +10,6 @@ const Taplist: React.FC = () => {
       <Hero 
         imageSrc={DRINKS_HERO_IMG} 
         title={TAPLIST_CONTENT.heroTitle}
-        subtitle={TAPLIST_CONTENT.heroSubtitle}
         overlayColor="blue"
       />
 

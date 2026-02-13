@@ -4,6 +4,7 @@ interface HeroProps {
   imageSrc: string;
   title?: string;
   subtitle?: string;
+  subtitleImage?: string;
   logoSrc?: string;
   overlayColor?: 'blue' | 'red' | 'black';
   titleFontWeight?: string;
@@ -14,6 +15,7 @@ const Hero: React.FC<HeroProps> = ({
   imageSrc, 
   title, 
   subtitle, 
+  subtitleImage,
   logoSrc, 
   overlayColor = 'black',
   titleFontWeight = 'font-black',
@@ -44,7 +46,14 @@ const Hero: React.FC<HeroProps> = ({
             {title}
           </h1>
         )}
-        {subtitle && (
+        
+        {subtitleImage ? (
+           <img 
+             src={subtitleImage} 
+             alt={subtitle || "Subtitle"} 
+             className="mt-4 h-9 md:h-14 w-auto object-contain drop-shadow-lg transform rotate-[-2deg] hover:rotate-0 transition-transform duration-300"
+           />
+        ) : subtitle && (
           <p className="mt-8 text-xl md:text-3xl font-script text-elmwood-cream bg-elmwood-red px-6 py-2 border-2 border-elmwood-black shadow-retro-lg rotate-2">
             {subtitle}
           </p>
