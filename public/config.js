@@ -4,17 +4,12 @@ window.ELMWOOD_CONFIG = {
     title: "The Elmwood Bar",
     description: "The Elmwood Bar - Neighbourhood Bar & Local Pub in Etobicoke"
   },
-  emailConfig: {
-    smtpUser: "USER_PROVIDE_GMAIL_ADDRESS",
-    smtpPassword: "USER_PROVIDE_APP_PASSWORD",
-    destinationEmail: "info@theelmwoodbar.com"
-  },
   images: {
     logo: "https://theelmwoodbar.com/temp/logo2.png",
     wingsIcon: "https://theelmwoodbar.com/temp/wings.png",
     glassesIcon: "https://theelmwoodbar.com/temp/glasses.png",
     drinksMenu: "https://theelmwoodbar.com/temp/drinks.png",
-    contactHero: "https://theelmwoodbar.com/temp/contactbg.jpg",
+    contactHero: "https://theelmwoodbar.com/temp/contactbg2.jpg",
     homeHero: "https://theelmwoodbar.com/temp/wingsbg2.jpg",
     menuHero: "https://theelmwoodbar.com/temp/menubg.jpg",
     menuDisplay: "https://theelmwoodbar.com/temp/menu.png",
@@ -73,21 +68,6 @@ window.ELMWOOD_CONFIG = {
       { brewery: 'Common Good Beer Co.', beer: 'Ellesmere', style: 'English Amber Ale', abv: '5.2%' },
       { brewery: 'Great Lakes Brewery', beer: 'Canuck Pale Ale', style: 'Pale Ale', abv: '5.2%' },
     ]
-  },
-  taplistPage: {
-    heroTitle: "On Tap",
-    heroSubtitle: "Fresh Local Pours",
-    sectionTitleMain: "Current",
-    sectionTitleHighlight: "Selection",
-    updatedLabel: "Updated:",
-    tableHeaders: {
-      brewery: "Brewery",
-      beer: "Beer",
-      style: "Style",
-      abv: "ABV%"
-    },
-    cantDecideTitle: "Can't decide?",
-    cantDecideText: "Ask us for a flight or a recommendation."
   },
   contactPage: {
     heroTitle: "Get in Touch",

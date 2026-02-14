@@ -29,16 +29,12 @@ export const CONTACT_INFO = config.contact || {
   hours: '3 to 11 PM, Tuesday through Sunday',
 };
 
-export const EMAIL_CONFIG = config.emailConfig || {
-  destinationEmail: 'info@theelmwoodbar.com'
-};
-
 // Image assets
 export const LOGO_IMG = config.images?.logo || "https://theelmwoodbar.com/temp/logo2.png";
 export const WINGS_ICON_IMG = config.images?.wingsIcon || "https://theelmwoodbar.com/temp/wings.png";
 export const GLASSES_ICON_IMG = config.images?.glassesIcon || "https://theelmwoodbar.com/temp/glasses.png";
 export const DRINKS_MENU_IMG = config.images?.drinksMenu || "https://theelmwoodbar.com/temp/drinks.png";
-export const CONTACT_HERO_IMG = config.images?.contactHero || "https://theelmwoodbar.com/temp/contactbg.jpg";
+export const CONTACT_HERO_IMG = config.images?.contactHero || "https://theelmwoodbar.com/temp/contactbg2.jpg";
 export const HOME_HERO_IMG = config.images?.homeHero || "https://theelmwoodbar.com/temp/wingsbg2.jpg";
 export const MENU_HERO_IMG = config.images?.menuHero || "https://theelmwoodbar.com/temp/menubg.jpg";
 export const MENU_IMG = config.images?.menuDisplay || "https://theelmwoodbar.com/temp/food.png";
@@ -77,22 +73,6 @@ export const DRINKS_CONTENT = config.drinksPage || {
   cantDecideTitle: "Can't decide?",
   cantDecideText: "Check our chalkboard for updates on fresh cans of craft and domestic beers.",
   cocktailsTitle: "Cocktails & Wine"
-};
-
-export const TAPLIST_CONTENT = config.taplistPage || {
-  heroTitle: "On Tap",
-  heroSubtitle: "Fresh Local Pours",
-  sectionTitleMain: "Current",
-  sectionTitleHighlight: "Selection",
-  updatedLabel: "Updated:",
-  tableHeaders: {
-    brewery: "Brewery",
-    beer: "Beer",
-    style: "Style",
-    abv: "ABV"
-  },
-  cantDecideTitle: "Can't decide?",
-  cantDecideText: "Ask us for a flight or a recommendation."
 };
 
 export const CONTACT_CONTENT = config.contactPage || {

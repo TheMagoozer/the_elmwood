@@ -40,11 +40,6 @@ export interface ElmwoodConfig {
     blogTO?: string;
   };
   navLinks?: NavLinkItem[];
-  emailConfig?: {
-    smtpUser?: string;
-    smtpPassword?: string;
-    destinationEmail: string;
-  };
   homePage?: {
     heroSubtitle: string;
     heroSubtitleImage?: string;
@@ -74,22 +69,6 @@ export interface ElmwoodConfig {
     cantDecideText: string;
     cocktailsTitle: string;
     drinksData?: DrinkItem[];
-  };
-  taplistPage?: {
-    heroTitle: string;
-    heroSubtitle: string;
-    sectionTitleMain: string;
-    sectionTitleHighlight: string;
-    updatedLabel: string;
-    tableHeaders: {
-      brewery: string;
-      beer: string;
-      style: string;
-      abv: string;
-    };
-    cantDecideTitle: string;
-    cantDecideText: string;
-    cocktailsTitle: string;
   };
   contactPage?: {
     heroTitle: string;

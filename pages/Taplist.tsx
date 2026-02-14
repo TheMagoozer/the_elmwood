@@ -1,25 +1,23 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import { DRINKS_DATA, DRINKS_HERO_IMG, TAPLIST_CONTENT } from '../constants';
+import { DRINKS_DATA, DRINKS_HERO_IMG, DRINKS_CONTENT } from '../constants';
 
 const Taplist: React.FC = () => {
-  const currentDate = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
-
   return (
     <div className="w-full">
       <Hero 
         imageSrc={DRINKS_HERO_IMG} 
-        title={TAPLIST_CONTENT.heroTitle}
+        title={DRINKS_CONTENT.heroTitle}
         overlayColor="blue"
       />
 
       <section className="max-w-6xl mx-auto py-16 px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-8 border-b-4 border-elmwood-black pb-4">
           <h2 className="text-4xl md:text-6xl font-black uppercase text-elmwood-black leading-none">
-            {TAPLIST_CONTENT.sectionTitleMain}<br/><span className="text-elmwood-blue">{TAPLIST_CONTENT.sectionTitleHighlight}</span>
+            {DRINKS_CONTENT.tapSectionTitleMain}<br/><span className="text-elmwood-blue">{DRINKS_CONTENT.tapSectionTitleHighlight}</span>
           </h2>
           <div className="mt-4 md:mt-0 font-bold bg-elmwood-red text-white px-4 py-1 border-2 border-elmwood-black shadow-retro-sm transform rotate-1">
-            {TAPLIST_CONTENT.updatedLabel} {currentDate}
+            {DRINKS_CONTENT.updatedLabel} {DRINKS_CONTENT.updatedDate}
           </div>
         </div>
 
@@ -27,10 +25,10 @@ const Taplist: React.FC = () => {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-elmwood-black text-elmwood-cream uppercase tracking-wider text-sm md:text-base">
-                <th className="p-4 md:p-6 border-r border-gray-700">{TAPLIST_CONTENT.tableHeaders.brewery}</th>
-                <th className="p-4 md:p-6 border-r border-gray-700">{TAPLIST_CONTENT.tableHeaders.beer}</th>
-                <th className="p-4 md:p-6 border-r border-gray-700">{TAPLIST_CONTENT.tableHeaders.style}</th>
-                <th className="p-4 md:p-6">{TAPLIST_CONTENT.tableHeaders.abv}</th>
+                <th className="p-4 md:p-6 border-r border-gray-700">{DRINKS_CONTENT.tableHeaders.brewery}</th>
+                <th className="p-4 md:p-6 border-r border-gray-700">{DRINKS_CONTENT.tableHeaders.beer}</th>
+                <th className="p-4 md:p-6 border-r border-gray-700">{DRINKS_CONTENT.tableHeaders.style}</th>
+                <th className="p-4 md:p-6">{DRINKS_CONTENT.tableHeaders.abv}</th>
               </tr>
             </thead>
             <tbody className="divide-y-2 divide-gray-200">
@@ -50,8 +48,8 @@ const Taplist: React.FC = () => {
         </div>
         
         <div className="mt-12 p-8 border-4 border-dashed border-elmwood-black bg-elmwood-cream text-center">
-            <h3 className="text-2xl font-black uppercase mb-2">{TAPLIST_CONTENT.cantDecideTitle}</h3>
-            <p className="text-lg">{TAPLIST_CONTENT.cantDecideText}</p>
+            <h3 className="text-2xl font-black uppercase mb-2">{DRINKS_CONTENT.cantDecideTitle}</h3>
+            <p className="text-lg">{DRINKS_CONTENT.cantDecideText}</p>
         </div>
       </section>
     </div>
