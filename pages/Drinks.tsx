@@ -3,8 +3,6 @@ import Hero from '../components/Hero';
 import { DRINKS_DATA, DRINKS_MENU_IMG, DRINKS_HERO_IMG, DRINKS_CONTENT } from '../constants';
 
 const Drinks: React.FC = () => {
-  const currentDate = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
-
   return (
     <div className="w-full">
       <Hero 
@@ -20,7 +18,7 @@ const Drinks: React.FC = () => {
             {DRINKS_CONTENT.tapSectionTitleMain} <span className="text-elmwood-blue">{DRINKS_CONTENT.tapSectionTitleHighlight}</span>
           </h2>
           <div className="mt-4 md:mt-0 font-bold bg-elmwood-red text-white px-4 py-1 border-2 border-elmwood-black shadow-retro-sm transform rotate-1">
-            {DRINKS_CONTENT.updatedLabel} {currentDate}
+            {DRINKS_CONTENT.updatedLabel} {DRINKS_CONTENT.updatedDate}
           </div>
         </div>
 

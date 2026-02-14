@@ -1,5 +1,5 @@
 import React from 'react';
-import { SOCIAL_LINKS, CONTACT_INFO, GLASSES_ICON_IMG, FOOTER_CONTENT } from '../constants';
+import { SOCIAL_LINKS, CONTACT_INFO, GLASSES_ICON_IMG, FOOTER_CONTENT, BLOGTO_IMG } from '../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <p className="mb-2 font-bold text-lg">{CONTACT_INFO.phone}</p>
           <p className="mb-6 font-medium">{CONTACT_INFO.hours}</p>
           
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
             <a 
               href={SOCIAL_LINKS.instagram} 
               target="_blank" 
@@ -30,6 +30,16 @@ const Footer: React.FC = () => {
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
             </a>
+            {SOCIAL_LINKS.blogTO && (
+                <a 
+                  href={SOCIAL_LINKS.blogTO} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="h-[40px] px-3 bg-elmwood-cream text-elmwood-black border-2 border-elmwood-black shadow-retro-sm hover:translate-y-1 hover:shadow-none transition-all rounded-lg flex items-center justify-center"
+                >
+                  <img src={BLOGTO_IMG} alt="blogTO" className="h-4 w-auto object-contain" />
+                </a>
+            )}
           </div>
         </div>
 

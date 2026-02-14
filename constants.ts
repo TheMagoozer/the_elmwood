@@ -9,10 +9,10 @@ export const NAV_LINKS: NavLinkItem[] = config.navLinks || [
   { label: 'Contact', path: '/contact' },
 ];
 
-export const DRINKS_DATA: DrinkItem[] = config.drinksData || [
+export const DRINKS_DATA: DrinkItem[] = config.drinksPage?.drinksData || [
   { brewery: 'The Elmwood', beer: 'Allentown', style: 'House Lager', abv: '5%' },
   { brewery: 'Bellwoods Brewery', beer: 'Roman Candle', style: 'IPA', abv: '6.8%' },
-  { brewery: 'Great Lakes Brewery', beer: 'Helles German Lager', style: 'Helles', abv: '5%' },
+  { brewery: 'True History Brewing', beer: 'Helles German Lager', style: 'Helles', abv: '5%' },
   { brewery: 'Common Good Beer Co.', beer: 'Ellesmere', style: 'English Amber Ale', abv: '5.2%' },
   { brewery: 'Great Lakes Brewery', beer: 'Canuck Pale Ale', style: 'Pale Ale', abv: '5.2%' },
 ];
@@ -20,6 +20,7 @@ export const DRINKS_DATA: DrinkItem[] = config.drinksData || [
 export const SOCIAL_LINKS = config.social || {
   instagram: 'https://www.instagram.com/theelmwoodbar',
   facebook: 'https://www.facebook.com/profile.php?id=61587383339614',
+  blogTO: 'https://www.blogto.com/eat_drink/2026/02/elmwood-bar-toronto/',
 };
 
 export const CONTACT_INFO = config.contact || {
@@ -28,17 +29,22 @@ export const CONTACT_INFO = config.contact || {
   hours: '3 to 11 PM, Tuesday through Sunday',
 };
 
+export const EMAIL_CONFIG = config.emailConfig || {
+  destinationEmail: 'info@theelmwoodbar.com'
+};
+
 // Image assets
 export const LOGO_IMG = config.images?.logo || "https://theelmwoodbar.com/temp/logo2.png";
 export const WINGS_ICON_IMG = config.images?.wingsIcon || "https://theelmwoodbar.com/temp/wings.png";
 export const GLASSES_ICON_IMG = config.images?.glassesIcon || "https://theelmwoodbar.com/temp/glasses.png";
 export const DRINKS_MENU_IMG = config.images?.drinksMenu || "https://theelmwoodbar.com/temp/drinks.png";
-export const CONTACT_HERO_IMG = config.images?.contactHero || "https://theelmwoodbar.com/temp/contact.jpg";
+export const CONTACT_HERO_IMG = config.images?.contactHero || "https://theelmwoodbar.com/temp/contactbg.jpg";
 export const HOME_HERO_IMG = config.images?.homeHero || "https://theelmwoodbar.com/temp/wingsbg2.jpg";
 export const MENU_HERO_IMG = config.images?.menuHero || "https://theelmwoodbar.com/temp/menubg.jpg";
 export const MENU_IMG = config.images?.menuDisplay || "https://theelmwoodbar.com/temp/food.png";
-export const DRINKS_HERO_IMG = config.images?.drinksHero || "https://theelmwoodbar.com/temp/tapsbg.jpg";
+export const DRINKS_HERO_IMG = config.images?.drinksHero || "https://theelmwoodbar.com/temp/tapsbg2.jpg";
 export const OWNERS_IMG = config.images?.owners || "https://theelmwoodbar.com/temp/Owners.jpg";
+export const BLOGTO_IMG = config.images?.blogTO || "https://theelmwoodbar.com/temp/blogTO.png";
 
 // Page Content
 export const HOME_CONTENT = config.homePage || {
@@ -51,7 +57,6 @@ export const HOME_CONTENT = config.homePage || {
 
 export const MENU_CONTENT = config.menuPage || {
   heroTitle: "The Menu",
-  heroSubtitle: "Focused & Fierce",
   heading: "Eat Up",
   rotateMessage: "Menu rotates seasonally",
   updatedMessage: "Updated menu coming soon!"
@@ -59,10 +64,10 @@ export const MENU_CONTENT = config.menuPage || {
 
 export const DRINKS_CONTENT = config.drinksPage || {
   heroTitle: "Drinks",
-  heroSubtitle: "Fresh Local Pours",
   tapSectionTitleMain: "What's on",
   tapSectionTitleHighlight: "Tap?",
   updatedLabel: "Updated:",
+  updatedDate: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
   tableHeaders: {
     brewery: "Brewery",
     beer: "Beer",

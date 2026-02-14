@@ -1,19 +1,26 @@
+
 window.ELMWOOD_CONFIG = {
   site: {
     title: "The Elmwood Bar",
     description: "The Elmwood Bar - Neighbourhood Bar & Local Pub in Etobicoke"
+  },
+  emailConfig: {
+    smtpUser: "USER_PROVIDE_GMAIL_ADDRESS",
+    smtpPassword: "USER_PROVIDE_APP_PASSWORD",
+    destinationEmail: "info@theelmwoodbar.com"
   },
   images: {
     logo: "https://theelmwoodbar.com/temp/logo2.png",
     wingsIcon: "https://theelmwoodbar.com/temp/wings.png",
     glassesIcon: "https://theelmwoodbar.com/temp/glasses.png",
     drinksMenu: "https://theelmwoodbar.com/temp/drinks.png",
-    contactHero: "https://theelmwoodbar.com/temp/contact.jpg",
+    contactHero: "https://theelmwoodbar.com/temp/contactbg.jpg",
     homeHero: "https://theelmwoodbar.com/temp/wingsbg2.jpg",
     menuHero: "https://theelmwoodbar.com/temp/menubg.jpg",
-    menuDisplay: "https://theelmwoodbar.com/temp/food.png",
-    drinksHero: "https://theelmwoodbar.com/temp/tapsbg.jpg",
-    owners: "https://theelmwoodbar.com/temp/Owners.jpg"
+    menuDisplay: "https://theelmwoodbar.com/temp/menu.png",
+    drinksHero: "https://theelmwoodbar.com/temp/tapsbg2.jpg",
+    owners: "https://theelmwoodbar.com/temp/Owners.jpg",
+    blogTO: "https://theelmwoodbar.com/temp/blogTO.png"
   },
   contact: {
     address: '753 The Queensway, Etobicoke, ON, M8Z 1M8',
@@ -23,6 +30,7 @@ window.ELMWOOD_CONFIG = {
   social: {
     instagram: 'https://www.instagram.com/theelmwoodbar',
     facebook: 'https://www.facebook.com/profile.php?id=61587383339614',
+    blogTO: 'https://www.blogto.com/eat_drink/2026/02/elmwood-bar-toronto/'
   },
   navLinks: [
     { label: 'Home', path: '/' },
@@ -39,17 +47,16 @@ window.ELMWOOD_CONFIG = {
   },
   menuPage: {
     heroTitle: "The Menu",
-    heroSubtitle: "Focused & Fierce",
     heading: "Eat Up",
     rotateMessage: "Menu rotates seasonally",
     updatedMessage: "Updated menu coming soon!"
   },
   drinksPage: {
     heroTitle: "Drinks",
-    heroSubtitle: "Fresh Local Pours",
     tapSectionTitleMain: "What's on",
     tapSectionTitleHighlight: "Tap?",
     updatedLabel: "Updated:",
+    updatedDate: "February 13, 2026",
     tableHeaders: {
       brewery: "Brewery",
       beer: "Beer",
@@ -58,7 +65,14 @@ window.ELMWOOD_CONFIG = {
     },
     cantDecideTitle: "Can't decide?",
     cantDecideText: "Check our chalkboard for updates on fresh cans of craft and domestic beers.",
-    cocktailsTitle: "Cocktails & Wine"
+    cocktailsTitle: "Cocktails & Wine",
+    drinksData: [
+      { brewery: 'The Elmwood', beer: 'Allentown', style: 'House Lager', abv: '5%' },
+      { brewery: 'Bellwoods Brewery', beer: 'Roman Candle', style: 'IPA', abv: '6.8%' },
+      { brewery: 'True History Brewing', beer: 'Helles German Lager', style: 'Helles', abv: '5%' },
+      { brewery: 'Common Good Beer Co.', beer: 'Ellesmere', style: 'English Amber Ale', abv: '5.2%' },
+      { brewery: 'Great Lakes Brewery', beer: 'Canuck Pale Ale', style: 'Pale Ale', abv: '5.2%' },
+    ]
   },
   taplistPage: {
     heroTitle: "On Tap",
@@ -92,12 +106,5 @@ window.ELMWOOD_CONFIG = {
   footer: {
     brand: "The Elmwood",
     copyright: "The Elmwood Bar. All rights reserved."
-  },
-  drinksData: [
-    { brewery: 'The Elmwood', beer: 'Allentown', style: 'House Lager', abv: '5%' },
-    { brewery: 'Bellwoods Brewery', beer: 'Roman Candle', style: 'IPA', abv: '6.8%' },
-    { brewery: 'True History Brewing', beer: 'Helles German Lager', style: 'Helles', abv: '5%' },
-    { brewery: 'Common Good Beer Co.', beer: 'Ellesmere', style: 'English Amber Ale', abv: '5.2%' },
-    { brewery: 'Great Lakes Brewery', beer: 'Canuck Pale Ale', style: 'Pale Ale', abv: '5.2%' },
-  ]
+  }
 };

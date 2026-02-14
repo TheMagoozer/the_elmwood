@@ -1,3 +1,4 @@
+
 export interface DrinkItem {
   brewery: string;
   beer: string;
@@ -26,6 +27,7 @@ export interface ElmwoodConfig {
     menuDisplay: string;
     drinksHero: string;
     owners: string;
+    blogTO?: string;
   };
   contact?: {
     address: string;
@@ -35,8 +37,14 @@ export interface ElmwoodConfig {
   social?: {
     instagram: string;
     facebook: string;
+    blogTO?: string;
   };
   navLinks?: NavLinkItem[];
+  emailConfig?: {
+    smtpUser?: string;
+    smtpPassword?: string;
+    destinationEmail: string;
+  };
   homePage?: {
     heroSubtitle: string;
     heroSubtitleImage?: string;
@@ -46,17 +54,16 @@ export interface ElmwoodConfig {
   };
   menuPage?: {
     heroTitle: string;
-    heroSubtitle: string;
     heading: string;
     rotateMessage: string;
     updatedMessage: string;
   };
   drinksPage?: {
     heroTitle: string;
-    heroSubtitle: string;
     tapSectionTitleMain: string;
     tapSectionTitleHighlight: string;
     updatedLabel: string;
+    updatedDate?: string;
     tableHeaders: {
       brewery: string;
       beer: string;
@@ -66,6 +73,7 @@ export interface ElmwoodConfig {
     cantDecideTitle: string;
     cantDecideText: string;
     cocktailsTitle: string;
+    drinksData?: DrinkItem[];
   };
   taplistPage?: {
     heroTitle: string;
@@ -101,7 +109,6 @@ export interface ElmwoodConfig {
     brand: string;
     copyright: string;
   };
-  drinksData?: DrinkItem[];
 }
 
 declare global {
