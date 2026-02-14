@@ -54,12 +54,18 @@ const Contact: React.FC = () => {
     formPayload.append('message', formData.message);
 
     try {
-      const response = await fetch('/email/send.php', {
+      // Using mode: 'no-cors' allows the request to be sent to a different origin (e.g. localhost -> theelmwoodbar.com)
+      // without requiring the server to send CORS headers. 
+      // NOTE: This results in an 'opaque' response where we cannot read the status code or body.
+      // We assume success if the request completes without a network error.
+      const response = await fetch('https://theelmwoodbar.com/email/send.php', {
         method: 'POST',
         body: formPayload,
+        mode: 'no-cors' 
       });
 
-      if (response.ok) {
+      // Check for .ok (standard success) OR 'opaque' (no-cors success)
+      if (response.ok || response.type === 'opaque') {
         setStatus('success');
         setFormData({ name: '', email: '', message: '' });
         setIsVerified(false);
