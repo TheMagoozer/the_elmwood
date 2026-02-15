@@ -30,22 +30,22 @@ export const CONTACT_INFO = config.contact || {
 };
 
 // Image assets
-export const LOGO_IMG = config.images?.logo || "https://theelmwoodbar.com/temp/logo2.png";
-export const WINGS_ICON_IMG = config.images?.wingsIcon || "https://theelmwoodbar.com/temp/wings.png";
-export const GLASSES_ICON_IMG = config.images?.glassesIcon || "https://theelmwoodbar.com/temp/glasses.png";
-export const DRINKS_MENU_IMG = config.images?.drinksMenu || "https://theelmwoodbar.com/temp/drinks.png";
-export const CONTACT_HERO_IMG = config.images?.contactHero || "https://theelmwoodbar.com/temp/contactbg2.jpg";
-export const HOME_HERO_IMG = config.images?.homeHero || "https://theelmwoodbar.com/temp/wingsbg2.jpg";
-export const MENU_HERO_IMG = config.images?.menuHero || "https://theelmwoodbar.com/temp/menubg.jpg";
-export const MENU_IMG = config.images?.menuDisplay || "https://theelmwoodbar.com/temp/food.png";
-export const DRINKS_HERO_IMG = config.images?.drinksHero || "https://theelmwoodbar.com/temp/tapsbg2.jpg";
-export const OWNERS_IMG = config.images?.owners || "https://theelmwoodbar.com/temp/Owners.jpg";
-export const BLOGTO_IMG = config.images?.blogTO || "https://theelmwoodbar.com/temp/blogTO.png";
+export const LOGO_IMG = config.images?.logo || "https://theelmwoodbar.com/images/elmwood_logo.png";
+export const WINGS_ICON_IMG = config.images?.wingsIcon || "https://theelmwoodbar.com/images/wings.png";
+export const GLASSES_ICON_IMG = config.images?.glassesIcon || "https://theelmwoodbar.com/images/glasses.png";
+export const DRINKS_MENU_IMG = config.images?.drinksMenu || "https://theelmwoodbar.com/menus/drinks.png";
+export const CONTACT_HERO_IMG = config.images?.contactHero || "https://theelmwoodbar.com/images/contactbg2.jpg";
+export const HOME_HERO_IMG = config.images?.homeHero || "https://theelmwoodbar.com/images/wingsbg.jpg";
+export const MENU_HERO_IMG = config.images?.menuHero || "https://theelmwoodbar.com/images/menubg.jpg";
+export const MENU_IMG = config.images?.menuDisplay || "https://theelmwoodbar.com/menus/food.png";
+export const DRINKS_HERO_IMG = config.images?.drinksHero || "https://theelmwoodbar.com/images/tapsbg2.jpg";
+export const OWNERS_IMG = config.images?.owners || "https://theelmwoodbar.com/images/Owners.jpg";
+export const BLOGTO_IMG = config.images?.blogTO || "https://theelmwoodbar.com/images/blogTO.png";
 
 // Page Content
 export const HOME_CONTENT = config.homePage || {
   heroSubtitle: "Cold Beer • Hot Wings • Good Vibes",
-  heroSubtitleImage: "https://theelmwoodbar.com/temp/now_open.png",
+  heroSubtitleImage: "https://theelmwoodbar.com/images/now_open.png",
   introTitleMain: "A Neighbourhood Joint",
   introTitleHighlight: "Since Recently.",
   introText: "Family-owned and built by wing lovers. After countless trips to Buffalo, we perfected authentic Buffalo wings—crispy, saucy, and made with passion. Can't wait to have you."

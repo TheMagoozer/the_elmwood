@@ -5,17 +5,17 @@ window.ELMWOOD_CONFIG = {
     description: "The Elmwood Bar - Neighbourhood Bar & Local Pub in Etobicoke"
   },
   images: {
-    logo: "https://theelmwoodbar.com/temp/logo2.png",
-    wingsIcon: "https://theelmwoodbar.com/temp/wings.png",
-    glassesIcon: "https://theelmwoodbar.com/temp/glasses.png",
-    drinksMenu: "https://theelmwoodbar.com/temp/drinks.png",
-    contactHero: "https://theelmwoodbar.com/temp/contactbg2.jpg",
-    homeHero: "https://theelmwoodbar.com/temp/wingsbg2.jpg",
-    menuHero: "https://theelmwoodbar.com/temp/menubg.jpg",
-    menuDisplay: "https://theelmwoodbar.com/temp/menu.png",
-    drinksHero: "https://theelmwoodbar.com/temp/tapsbg2.jpg",
-    owners: "https://theelmwoodbar.com/temp/Owners.jpg",
-    blogTO: "https://theelmwoodbar.com/temp/blogTO.png"
+    logo: "https://theelmwoodbar.com/images/elmwood_logo.png",
+    wingsIcon: "https://theelmwoodbar.com/images/wings.png",
+    glassesIcon: "https://theelmwoodbar.com/images/glasses.png",
+    drinksMenu: "https://theelmwoodbar.com/menus/drinks.png",
+    contactHero: "https://theelmwoodbar.com/images/contactbg2.jpg",
+    homeHero: "https://theelmwoodbar.com/images/wingsbg.jpg",
+    menuHero: "https://theelmwoodbar.com/images/menubg.jpg",
+    menuDisplay: "https://theelmwoodbar.com/menus/food.png",
+    drinksHero: "https://theelmwoodbar.com/images/tapsbg2.jpg",
+    owners: "https://theelmwoodbar.com/images/Owners.jpg",
+    blogTO: "https://theelmwoodbar.com/images/blogTO.png"
   },
   contact: {
     address: '753 The Queensway, Etobicoke, ON, M8Z 1M8',
@@ -35,7 +35,7 @@ window.ELMWOOD_CONFIG = {
   ],
   homePage: {
     heroSubtitle: "Cold Beer • Hot Wings • Good Vibes",
-    heroSubtitleImage: "https://theelmwoodbar.com/temp/now_open.png",
+    heroSubtitleImage: "https://theelmwoodbar.com/images/now_open.png",
     introTitleMain: "A Neighbourhood Joint",
     introTitleHighlight: "Since Recently.",
     introText: "Family-owned and built by wing lovers. After countless trips to Buffalo, we perfected authentic Buffalo wings—crispy, saucy, and made with passion. Can't wait to have you."
