@@ -44,7 +44,6 @@ export const BLOGTO_IMG = config.images?.blogTO || "https://theelmwoodbar.com/im
 
 // Page Content
 export const HOME_CONTENT = config.homePage || {
-  heroSubtitle: "Cold Beer • Hot Wings • Good Vibes",
   heroSubtitleImage: "https://theelmwoodbar.com/images/now_open.png",
   introTitleMain: "A Neighbourhood Joint",
   introTitleHighlight: "Since Recently.",
@@ -53,9 +52,7 @@ export const HOME_CONTENT = config.homePage || {
 
 export const MENU_CONTENT = config.menuPage || {
   heroTitle: "The Menu",
-  heading: "Eat Up",
-  rotateMessage: "Menu rotates seasonally",
-  updatedMessage: "Updated menu coming soon!"
+  heading: "Eat Up"
 };
 
 export const DRINKS_CONTENT = config.drinksPage || {

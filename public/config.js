@@ -34,7 +34,6 @@ window.ELMWOOD_CONFIG = {
     { label: 'Contact', path: '/contact' },
   ],
   homePage: {
-    heroSubtitle: "Cold Beer • Hot Wings • Good Vibes",
     heroSubtitleImage: "https://theelmwoodbar.com/images/now_open.png",
     introTitleMain: "A Neighbourhood Joint",
     introTitleHighlight: "Since Recently.",
@@ -42,9 +41,7 @@ window.ELMWOOD_CONFIG = {
   },
   menuPage: {
     heroTitle: "The Menu",
-    heading: "Eat Up",
-    rotateMessage: "Menu rotates seasonally",
-    updatedMessage: "Updated menu coming soon!"
+    heading: "Eat Up"
   },
   drinksPage: {
     heroTitle: "Drinks",

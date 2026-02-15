@@ -41,7 +41,6 @@ export interface ElmwoodConfig {
   };
   navLinks?: NavLinkItem[];
   homePage?: {
-    heroSubtitle: string;
     heroSubtitleImage?: string;
     introTitleMain: string;
     introTitleHighlight: string;
@@ -50,8 +49,6 @@ export interface ElmwoodConfig {
   menuPage?: {
     heroTitle: string;
     heading: string;
-    rotateMessage: string;
-    updatedMessage: string;
   };
   drinksPage?: {
     heroTitle: string;
